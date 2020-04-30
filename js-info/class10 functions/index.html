@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 - Section JavaScript Fundamentals 2.14 Functions</title>
+</head>
+<body>
+    <p><a href="https://javascript.info/function-basics">Java Info</a></p>
+    <script>
+        /*
+        // 1 - The following function returns true if the parameter age is greater than 18. Will the function work differently if else is removed?
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            } //else { // no, that's works same
+                // ...
+                return confirm('Did parents allow you?');
+            //}
+        }
+        let age = prompt("How old are you: ", 18);
+
+        if ( checkAge(age) ){
+            alert( "Access Granted" );
+        } else {
+            alert( "Access Denied" );
+        }
+        */
+       
+        /* 
+        // 2 - Rewrite the function using '?' or '||' 
+        // Rewrite it, to perform the same, but without if, in a single line.
+        // Make two variants of checkAge:
+        // 1.Using a question mark operator ?
+        // 2.Using OR ||
+
+        function checkAge(age) {
+           // if (age > 18) {
+           //     return true;
+           // } else {
+           //     return confirm('Did parents allow you?');
+           // }
+            // a make the function bellow without "if" with this two operators "?" and "||"
+            //return (age > 18) || confirm('Did parents allow you?');
+            return (age > 18)? true : confirm('Did parents allow you?');
+        }
+
+        let age = prompt("How old are you: ", 18);
+
+        if ( checkAge(age) ){
+            alert( "Access Granted" );
+        } else {
+            alert( "Access Denied" );
+        }
+        */
+
+        /*
+        // 3 - Write a function min(a,b) which returns the least of two numbers a and b.
+        // min(2, 5) == 2
+        // min(3, -1) == -1
+        // min(1, 1) == 1
+
+        // function min(a,b){ // mine Function
+        //     let minNumber;
+        //     if( a<b ){
+        //         minNumber= a;
+        //     } else{
+        //         minNumber= b;
+        //     }
+        //    alert("Minor number between " +a+ " and " +b+ " is: " +minNumber); 
+        // }
+        function min(a, b) { // Function JS Info
+            if (a < b) {
+                return a;
+            } else {
+                return b;
+            }
+        }
+        let a= prompt("Put a Number for a:", 2);
+        let b= prompt("Put a Number for b:", 5);
+        alert( "Minor number between " +a+ " and " +b+ " is: " +min(a, b) );
+        */
+
+        // 4 - Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
+        // pow(3, 2) = 3 * 3 = 9
+        // pow(3, 3) = 3 * 3 * 3 = 27
+        // pow(1, 100) = 1 * 1 * ...* 1 = 1
+        // Create a web-page that prompts for x and n, and then shows the result of pow(x,n).
+        // P.S. In this task the function should support only natural values of n: integers up from 1.
+
+        function pow(x,n){
+            for(let i=0; i<n; i++){
+                return x*x;
+            }
+        }
+        let x= prompt("Put a Number for x:", 3);
+        let n= prompt("Put a Number for n:", 2);
+        while( n<=0 ){
+            n= prompt("Please Enter a Valid Number for n:", 2);           
+        } 
+            alert( "Exponetial " +x+ " by " +n+ " is: " +pow(x, n) );
+    
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6 -IfElse</title>
+</head>
+<body>
+    <p><a href="https://javascript.info/ifelse">Java Info</a></p>
+    <script>
+        /*
+        // 1 - if (a string with zero)
+        if("0"){
+            alert("Is true");
+        }
+        */
+
+        /*
+        // 2 - The name of JavaScript
+        let jsName= prompt("What's the official 'Name' of JavaScript", '');
+
+        if (jsName == "ECMAScript"){
+            alert("Right!!");
+        } else {
+            alert('The right name is "ECMAScript"');
+        }
+        */
+
+        /*
+        // 3 - Show the sign
+        let numberFromUser= prompt("Put an Aleatory number to the game");
+
+        if (numberFromUser > 0){
+            alert ("Your Value is greater than 0  -> " +numberFromUser );
+        } else if (numberFromUser < 0){
+            alert ("Your Value is less than 0  -> " +numberFromUser );
+        } else{
+            alert ("You Value is equal 0  -> " +numberFromUser );
+        }
+        */
+
+        /*
+        // 4 - Rewrite 'if' into '?'
+        let result, a= 2, b= 1;
+        
+        if (a + b < 4) {
+            result = 'Below';
+        } else {
+            result = 'Over';
+        }       
+
+        result = (a + b < 4)? "Below" :"Over";
+
+        alert("The Result is " +result);
+        */
+
+        // 5 - Rewrite 'if..else' into '?'
+        /*
+        let message;
+
+        if (login == 'Employee') {
+            message = 'Hello';
+        } else if (login == 'Director') {
+            message = 'Greetings';
+        } else if (login == '') {
+            message = 'No login';
+        } else {
+            message = '';
+        }
+        */
+        login = prompt("Write: 'Employee', 'Director', '' ", "");
+        let message = (login == 'Employee')? "Hello" : (login == 'Director')? "Greetings" : (login == '')? "No Login" : "";
+        
+        alert("This a Message " +message);
+
+    </script>
+    
+</body>
+</html>
